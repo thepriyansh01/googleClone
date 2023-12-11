@@ -1,0 +1,164 @@
+.Google {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 60px;
+    margin-right: 18px;
+    gap: 15px;
+}
+
+.headerLinks {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.headerCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.headerCircle>img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.headerCircle:hover {
+    background-color: #ffffff1a;
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 1px #0000001a;
+}
+
+.LogoContainer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 35vh;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+.GoogleLogo {
+    width: 100%;
+    max-width: 350px;
+    object-fit: contain;
+}
+
+.SearchBoxContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+}
+
+.SearchBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 600px;
+    min-width: 360px;
+    width: 100%;
+    height: 55px;
+    padding: 0 12px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 70px;
+}
+
+.SearchBox:hover {
+    border: none;
+    background-color: #303134;
+}
+
+.searchIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.searchIcon>svg {
+    height: 24px;
+    width: 24px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    max-width: 480px;
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    line-height: 22px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    margin-top: 18px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-family: arial;
+    padding: 0 16px;
+    margin: 8px;
+    border-radius: 6px;
+    background-color: #303134;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid #535459;
+}
+
+@media only screen and (max-width: 768px) {
+    .Header{
+        margin-right: 8px;
+        font-size: small;
+        gap: 8px;
+    }
+    .GoogleLogo {
+        transform: scale(0.8);
+    }
+
+    .SearchBox {
+        transform: scale(0.8);
+    }
+
+    .btn {
+        margin: 2px;
+        transform: scale(0.9);
+    }
+}
